@@ -31,3 +31,42 @@ for line in fhand:
     line = line.rstrip()
     if line.startswith('Am') :
         print(line)
+
+#same code as above but optimized
+fhand = open('biblekjv.txt')
+for line in fhand:
+    line = line.rstrip()
+    if not line.startswith('Am') :
+        continue
+    print(line)
+
+#we can look for a line anywhere in our string
+fhand = open('biblekjv.txt')
+for line in fhand:
+    line = line.rstrip()
+    if not 'christ' in line:
+        continue
+    print(line)
+
+#
+#fname = input('Enter the file name: ')
+#fhand = open(fname)
+#count = 0
+#for line in fhand:
+#    if line.startswith('Subject:') :
+#        count = count + 1
+#print('There were', count, 'subject lines in', fname)
+#the commented out code above allows users to input bad data, see revised code below
+fname = input('Enter the file name: ')
+try:
+    fhand = open(fname)
+except:
+    print('File Cannot Be Opened: ', fname)
+    quit()
+
+count = 0
+for line in fhand:
+    if line.startswith('Subject:') :
+        count = count + 1
+print('There were ', count, ' subject lines in ', fname)
+#enter a file name at prompt
