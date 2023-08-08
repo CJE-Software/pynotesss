@@ -78,3 +78,26 @@ print('There were ', count, ' subject lines in ', fname)
 
 friends = [ 'Jesus', 'God', 'Judas' ]
 cargo = ['shoes', 'robe', 'wisdom' ]
+
+print([1, 22, 44])
+print(['red', 'white', 'blue'])
+print(['red', 11.96, 22])
+print([1, [2, 3], 4])
+#above example using different data types stored in single variable as collection
+
+fruit = 'Apple'
+x = fruit[1]
+#what does x equal after the above code is run? x = p
+
+#lists and definite loops using collections BELOW
+pals = ['Jesus', 'Enoch', 'Judas']
+for person in pals :
+    print("Hello ", person)
+print('Finished!')
+
+example2 = ['Ivee', 'Isaiah', 'Lilly', 'Dustin', 'Karly']
+for z in example2:
+    print('hello there ', z)
+print('All Done!')
+
+#proceed to mainB.py
