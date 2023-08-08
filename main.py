@@ -70,3 +70,11 @@ for line in fhand:
         count = count + 1
 print('There were ', count, ' subject lines in ', fname)
 #enter a file name at prompt
+
+
+#chapter 8 python4everyone looking inside lists
+#a collection allows us to put many values in a single variable
+#a collection is good because we can carry many values around in one package
+
+friends = [ 'Jesus', 'God', 'Judas' ]
+cargo = ['shoes', 'robe', 'wisdom' ]
